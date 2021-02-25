@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Count Page</title>
+</head>
+<body>
+	<h1>Congratulations! You have done it nicely</h1>
+	<h2>THERE ARE {{ count }} words in your text</h2>
+	<h2>Your Text</h2>
+	<p>{{ fulltext }}</p>
+	{% for word, count in sorted %}
+
+
+	{{word}} - {{count}}
+	<br>
+
+
+
+	{% endfor %}
+
+	<footer class="container-fluid bg-dark my-0 py-3 text-light">
+    <p class="mb-0 text-center">© 2021-2022 Shivam Srivastava</p>
+    <p class="mb-0 text-center">
+    </p>
+
+  </footer>
+</body>
+</html>
